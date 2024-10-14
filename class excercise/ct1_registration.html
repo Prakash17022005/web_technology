@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard Manufacturing - Customer Registration</title>
+</head>
+<body>
+    <h2>Customer Registration Form</h2>
+    <form action="#" method="post">
+        <!-- Customer Name -->
+        <label for="name">Customer Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <!-- Email ID -->
+        <label for="email">Email ID:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Years of Experience -->
+        <label for="experience">Years of Experience:</label><br>
+        <select id="experience" name="experience">
+            <option value="<5">< 5 years</option>
+            <option value=">5/<10">5-10 years</option>
+            <option value=">10/<15">10-15 years</option>
+            <option value=">15">> 15 years</option>
+        </select><br><br>
+
+        <!-- Checkboxes -->
+        <label>Are you interested in:</label><br>
+        <input type="checkbox" id="product1" name="product1" value="Whiteboards">
+        <label for="product1">Whiteboards</label><br>
+        <input type="checkbox" id="product2" name="product2" value="Markers">
+        <label for="product2">Markers</label><br>
+        <input type="checkbox" id="product3" name="product3" value="Accessories">
+        <label for="product3">Accessories</label><br><br>
+
+        <!-- Feedback Textarea -->
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="5" cols="30" placeholder="Write your feedback here..."></textarea><br><br>
+
+        <!-- Submit and Clear Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>

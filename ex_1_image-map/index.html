@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Hotspots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The Map and Area Element</h1>
+    <p>Click on the Hotspot to learn more about the places.</p>
+
+    <h1 class="india-text">In <span class="white"> dia</span> <span class="asoka">🛞</span> <span class="green">Map</span></h1>
+
+    <!-- Embed the image map with updated coordinates -->
+    <img src="pngwing.com (5).png" alt="India map" usemap="#workmap">
+
+    <!-- Define the image map with the updated hotspot for Tamil Nadu -->
+    <map name="workmap">
+        <!-- Replace the coords with the exact ones from the image map tool -->
+        <area class="tooltip" alt="delhi" title="Delhi" href="#" onclick="togglePopup('Delhi')" onmouseover="changelegend()" coords="168,167,4" shape="circle">
+        <area class="tooltip" alt="west bengal" title="west bengal" href="#" onclick="togglePopup('West-Bengal')" onmouseover="changelegend()" coords="352,277,23" shape="circle">
+        <area class="tooltip" alt="Kolkatta" title="Kolkatta" href="#" onmouseover="changelegend()" coords="360,282,7" shape="circle">
+        <area class="tooltip" alt="Kerala" title="Kerala" href="#"  onmouseover="changelegend()"  coords="111,473,126,512,140,553,147,560,150,539,147,522,138,508,131,494" shape="poly">
+        <area class="tooltip" alt="Karnataka" title="Karnataka" href="#" onmouseover="changelegend()"  coords="96,430,101,420,97,412,101,395,117,388,133,379,156,369,166,368,154,411,145,432,149,448,168,454,176,463,157,477,153,490,134,496,120,483,109,474" shape="poly">
+        <area class="tooltip" alt="Goa" title="Goa" href="#"  onmouseover="changelegend()" coords="96,412,84,408,93,427,97,420" shape="poly">
+        <area class="tooltip" alt="Andhra Pradesh" title="Andhra Pradesh" href="#" onmouseover="changelegend()"  coords="172,458,184,465,205,458,213,443,212,428,218,416,237,408,251,390,266,382,279,361,255,370,233,379,211,395,189,404,162,414,149,424,145,433,153,444,161,450" shape="poly">
+        <area class="tooltip" alt="Telangana" title="Telangana" href="#" onmouseover="changelegend()"  coords="159,412,180,412,201,396,222,390,234,382,227,376,220,364,209,360,207,345,200,345,192,344,183,337,173,348,165,369" shape="poly">
+        <area class="tooltip" alt="Maharashtra" title="Maharashtra" href="#"  onmouseover="changelegend()"  coords="88,408,98,410,99,396,121,389,128,376,145,373,162,360,169,346,181,332,191,336,205,343,211,359,217,349,220,340,220,319,217,307,194,304,172,304,158,303,145,312,123,304,111,294,101,298,101,311,94,316,86,329,78,332,79,367" shape="poly">
+        <area class="tooltip" alt="Odissa" title="Odissa" href="#"  onmouseover="changelegend()" coords="235,379,245,363,249,352,245,334,262,337,255,328,264,310,277,306,281,296,293,291,315,296,331,293,345,308,337,323,329,334,313,339,296,356,282,356,262,369" shape="poly">
+        <area class="tooltip" alt="Chhattisgarh" title="Chhattisgarh" href="#"  onmouseover="changelegend()" coords="233,376,249,360,247,344,242,336,249,334,257,316,272,308,284,282,277,263,253,264,246,282,234,288,224,299,221,315,226,340,221,350,214,360" shape="poly">
+        <area class="tooltip" alt="Madhya Pradesh" title="Madhya Pradesh" href="#" onmouseover="changelegend()"  coords="105,292,133,304,147,312,165,299,177,306,198,302,211,303,226,300,241,282,249,272,241,264,256,259,262,252,252,244,235,240,212,230,197,232,196,243,196,251,185,248,183,233,193,225,196,210,189,201,171,208,160,218,153,223,160,227,169,227,173,234,165,236,158,244,158,249,145,253,137,256,138,245,131,242,122,244,125,256,121,262,115,272,112,280" shape="poly">
+        <area class="tooltip" alt="Gujarath" title="Gujarath" href="#"  onmouseover="changelegend()" coords="20,238,44,236,64,236,87,244,103,261,109,271,105,284,103,306,96,316,87,322,85,310,83,296,83,281,77,284,75,294,62,312,33,303,19,283,27,276,42,272,43,264,26,270,12,257,6,240" shape="poly">
+        <area class="tooltip" alt="Rajasthan" title="Rajasthan" href="#"  onmouseover="changelegend()"  coords="106,266,94,247,73,240,53,228,41,200,29,185,38,178,59,170,79,169,85,157,96,148,105,136,122,139,128,151,136,158,144,173,153,178,161,184,173,194,171,204,155,214,157,226,161,233,157,248,141,248,135,238,125,235,117,244,121,255,115,265" shape="poly">
+        <area class="tooltip" alt="Haryana" title="Haryana" href="#"  onmouseover="changelegend()"  coords="124,140,136,146,149,145,156,138,163,126,172,130,167,149,162,156,159,166,161,173,170,176,161,179,143,177" shape="poly">
+        <area class="tooltip" alt="Punjab" title="Punjab" href="#" onmouseover="changelegend()"  coords="140,124,20" shape="circle">
+        <area class="tooltip" alt="Himachal Pradesh" title="Himachal Pradesh" href="#"onmouseover="changelegend()" coords="173,103,21" shape="circle">
+        <area class="tooltip" alt="Uttarkhand" title="Uttarkhand" href="#"  onmouseover="changelegend()" coords="204,139,21" shape="circle">
+        <area class="tooltip" alt="Jammu & Kashmir" title="Jammu & Kashmir" href="#" onmouseover="changelegend()"  coords="102,10,227,85" shape="rect">
+        <area class="tooltip" alt="Uttar Pradesh" title="Uttar Pradesh" href="#" onmouseover="changelegend()"  coords="177,136,178,146,190,150,209,167,236,175,256,188,273,191,281,197,282,213,289,226,274,233,272,241,272,254,268,261,264,250,250,240,241,235,221,235,201,234,192,226,191,239,193,246,184,243,188,232,197,216,199,208,189,205,181,198,174,190,173,178,171,162,169,142" shape="poly">
+        <area class="tooltip" alt="Bihar" title="Bihar" href="#"  onmouseover="changelegend()" coords="313,228,26" shape="circle">
+        <area class="tooltip" alt="Sikkim" title="Sikkim" href="#"  onmouseover="changelegend()" coords="362,188,11" shape="circle">
+        <area class="tooltip" alt="Assam" title="Assam" href="#" onmouseover="changelegend()"  coords="388,216,396,202,419,200,442,197,454,197,465,186,485,179,487,186,480,193,468,202,462,209,456,218,447,231,444,244,433,248,441,226,433,218,413,222" shape="poly">
+        <area class="tooltip" alt="Meghalaya" title="Meghalaya" href="#"  onmouseover="changelegend()" coords="389,220,434,234" shape="rect">
+        <area class="tooltip" alt="Tripura" title="Tripura" href="#"  onmouseover="changelegend()" coords="416,247,429,276" shape="rect">
+        <area class="tooltip" alt="Mizoram" title="Mizoram" href="#"  onmouseover="changelegend()" coords="435,292,451,251" shape="rect">
+        <area class="tooltip" alt="Imphal" title="Imphal" href="#"  onmouseover="changelegend()" coords="449,251,472,228" shape="rect">
+        <area class="tooltip" alt="Arunachal Pradesh" title="Arunachal Pradesh" href="#"  onmouseover="changelegend()" coords="455,222,460,214,466,203,482,190,494,181,481,174,465,184,453,194,421,199,430,179,459,154,472,150,482,149,491,148,498,152,503,163,517,163,503,182,485,204,477,217,468,222" shape="poly">
+        <area class="tooltip" alt="tamilnadu" title="tamilnadu" href="#" onclick="togglePopup('tamilnadu')"  onmouseover="changelegend()"  coords="202,524,153,569,148,501,167,473,212,462" shape="poly">
+    </map>
+
+
+
+    <div class="popup" id="popup-1">
+        <div class="overlay" onclick="togglePopup()"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1 id="popup-title">Title</h1>
+            <img src="pngwing.com (2).png" id="popup-img">
+            <p id="popup-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rem dolor. Quisquam, minima iure culpa cumque animi magni nemo ut incidunt blanditiis, dolores repudiandae voluptates quidem optio, quam facilis vero?</p>
+        </div>
+    </div>
+
+    <div class="legend-div">
+        <img src="icons8-location-48.png" alt="location">
+        <h2 id="legend-text">Region</h2>
+    </div>
+
+    <!--<section id="delhi">
+        <div class="delhi_div">
+            <h1 class="delhi_title">Delhi</h1>
+            <img class="delhi_img" src="240_F_353325002_Bd3nwOHcTmQ5E0WtJ4Dqzu8rLe3Drq2s.jpg" alt ="delhi image" loading="lazy">
+        </div>
+        
+    </section>-->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

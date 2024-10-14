@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("pexels-adrien-olichon-1257089-2387819.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.background-text {
+    background-image: url('pexels-codioful-7130466.jpg'); /* Example image URL */
+    background-size: cover; /* Ensures the image covers the whole div */
+    background-position: center; /* Centers the image */
+    color:rgb(31, 31, 31); /* Makes the text readable over the background */
+    padding: 20px;
+    text-indent: 50px; /* Indentation for the first line */
+    width: 80%;
+    margin: 50px auto;
+    font-size: 18px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.564); /* Adds shadow effect */
+    border-radius: 10px; /* Rounded corners */
+    justify-content: center;
+    
+}
